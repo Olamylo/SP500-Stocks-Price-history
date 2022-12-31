@@ -1,4 +1,4 @@
-# SP500 Stocks Price history
+# Incremental Data load for S&P 500 Stocks Price history
  Incrementally loading data from an Open API 
  
  Both Python scripts use a lookup on the last data uploaded into the database and gets the value of the last date.
