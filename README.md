@@ -1,4 +1,10 @@
 # SP500 Stocks Price history
+ Incrementally loading data from an Open API 
+ 
+ Both Python scripts use a lookup on the last data uploaded into the database and gets the value of the last date.
+ it then uses this value as a variable when sending a requets to get data from yfinance open API.
+ 
+ These processes are automated using windows task scheduler.
  
  Sample Table
  
