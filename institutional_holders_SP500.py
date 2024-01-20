@@ -4,12 +4,10 @@ from datetime import datetime
 import requests
 from bs4 import BeautifulSoup
 
-
 def get_date(df, bulkid, date_added):
     df.insert(0, 'bulk_id', bulkid)
     df.insert(1, 'date_added', date_added)
     return df
-
 
 url = 'https://en.wikipedia.org/wiki/List_of_S%26P_500_companies'
 
@@ -68,6 +66,8 @@ df_1 = df_1.sort_values(by=['pctHeld'], ascending=False)
 df_1.to_csv('./institution_top_owned_companies.csv', index=False, encoding="utf-8")
 
 final_df.to_csv('./stock_institutional_holders_SP500.csv', index=False, encoding="utf-8")
+
+print('Finished')
 
 
 
